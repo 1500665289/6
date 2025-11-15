@@ -1,0 +1,37 @@
+<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="Item_God_Stone" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>&#x771F;&#x4ED9;&#x77F3;</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>12</Rate>
+	<TexPath>Spr\stone.png</TexPath>
+	<Desc>&#x4EE5;&#x5728;&#x4E16;&#x771F;&#x4ED9;&#x6240;&#x521B;&#x4E4B;&#x79D8;&#x6CD5;&#x6240;&#x5236;&#x9020;&#x7684;&#x7075;&#x529B;&#x7ED3;&#x6676;&#xFF0C;&#x770B;&#x4E0A;&#x53BB;&#x5F88;&#x7F8E;&#x4E3D;&#xFF0C;&#x80FD;&#x4F7F;&#x4F69;&#x6234;&#x8005;&#x65E0;&#x6B32;&#x65E0;&#x6C42;&#x3002;</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Beauty>18</Beauty>
+	<Item Kind="Equipment">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>&#x77F3;</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>900</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "3"/>
+			</CostItems>
+		</BeMade> 
+		<Equip>
+			<ToolModifier>SysTool_SP_GodStone</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+</List></ThingDefs>

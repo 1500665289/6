@@ -1,0 +1,20 @@
+﻿<ModifierDefs><List>
+	<Modifier Name="SysTool_SP_GodStone" Type="Normal">
+		<DisplayName>真仙石</DisplayName>
+		<Desc>受真仙石影响，无欲无求。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-10"/>
+			<li Name="WaterConsumeConstant" AddP="-10"/>
+			<li Name="FatigueConsumeConstant" AddP="-10"/>
+			<li Name="HappyConsumeConstant" AddP="-10"/>
+			<li Name="PainTolerance" AddP="20"/>
+			<li Name="ToleranceTMin" AddV="-200"/>
+			<li Name="ToleranceTMax" AddV="1000"/>
+			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="BaseEmotionAddV" AddV="200"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

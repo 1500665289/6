@@ -1,0 +1,197 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_SanQing_None">  
+		<DisplayName>三清秘传</DisplayName>
+		<Desc>三清留在人间的道统，是真正的万法源流。此术受上天眷顾，共分六境，修习者法力雄厚无比，极善炼宝炼丹，御器术法威力惊人，常常能在低修为时学会高阶神通。</Desc>
+		<SelectDesc>此功法擅长各类术法且根基深厚，只是进阶需要各种至宝。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>8,8,8,8,8</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>None</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>jiangdao</li>
+			<li>guanding</li>
+			<li>ciqi</li>
+			<li>kaiguang</li>
+			<li>cuiti</li>
+			<li>bihu</li>
+		</Skill>
+		<Hide>2</Hide>
+		<Stages>
+
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>金境</DisplayName>
+				<Desc></Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>暗金门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>赤金门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Perception_1_1_10</SuccessChange>
+						<FailedChangeAdd>Perception_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>养心</DisplayName>
+						<Desc/>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_JinEssence"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>	
+
+			<Stage Name="Stage2" Level="3">
+				<DisplayName>木境</DisplayName>
+				<Desc></Desc>
+				<Value>20000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>枯木门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>灵木门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Physique_1_1_10</SuccessChange>
+						<FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>强身</DisplayName>
+						<Desc/>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+						<ItemCost>
+							<Item name="Item_MuEssence"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>	
+
+			<Stage Name="Stage3" Level="6">
+				<DisplayName>水境</DisplayName>
+				<Desc></Desc>
+				<Value>100000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>浊水门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈魅力越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Charisma_1_1_10</SuccessChange>
+						<FailedChangeAdd>Charisma_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>寒水门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈魅力越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Charisma_1_1_10</SuccessChange>
+						<FailedChangeAdd>Charisma_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>美颜</DisplayName>
+						<Desc/>
+						<AddModifier>Gong_Gold</AddModifier>
+						<ItemCost>
+							<Item name="Item_ShuiEssence"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage4" Level="9">
+				<DisplayName>火境</DisplayName>
+				<Desc></Desc>
+				<Value>500000</Value>
+				<Necks>
+					
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>星火门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>烈火门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Intelligence_1_1_10</SuccessChange>
+						<FailedChangeAdd>Intelligence_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>悟道</DisplayName>
+						<Desc/>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Thunder1</AddModifier>
+						<ItemCost>
+							<Item name="Item_HuoEssence"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage5" Level="11">
+				<DisplayName>土境</DisplayName>
+				<Desc></Desc>
+				<Value>3000000</Value>
+				<Necks>
+					<Neck Location="0.25" Kind="Chance">
+						<DisplayName>凡土门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Luck_1_1_10</SuccessChange>
+						<FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>玄土门</DisplayName>
+						<Desc>[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>Luck_1_1_10</SuccessChange>
+						<FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>结缘</DisplayName>
+						<Desc/>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Thunder2</AddModifier>
+						<ItemCost>
+							<Item name="Item_TuEssence"/>
+						</ItemCost>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>天境</DisplayName>
+				<Desc></Desc>
+				<Value>10000000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>飞升</DisplayName>
+						<Desc/>
+						<NeckCountdown>60000</NeckCountdown>
+						<!--<NeckCountdown>60000</NeckCountdown>-->
+						<ThunderValue>500000</ThunderValue>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+		</Stages>
+	</Gong>
+</List></Gongs>

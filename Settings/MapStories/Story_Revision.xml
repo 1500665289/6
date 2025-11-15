@@ -1,0 +1,305 @@
+﻿<Stories><List>	
+	<Story Name="BaoZang_TaoHuaZhang"  Parent="BaseFillingStory">
+		<DisplayName>万古桃花瘴</DisplayName>
+		<Desc>此地乃是南荒绝地，这些瘴气哪怕是修行有成之人也抵挡不住，吸入一口就会全身溃烂而死。只有将肉身修成非人之存在才能入其中存活。</Desc>
+		<Kind>BaoZang_TaoHuaZhang</Kind>
+		<Selections>
+			<li>
+				<Display>进入其中</Display>
+				<Condition><![CDATA[	
+					me:IsLearnedEsoteric("Gong5_Esoterica_5") or me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Immortal")
+				]]>
+				</Condition>
+				<OKResult>
+				<![CDATA[	
+				
+				if (me:IsLearnedEsoteric("Gong11_Esoterica_6") == false) and (me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Perception") == false) then
+					if me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Immortal") then
+						me:AddMsg("[NAME]依仗自己的不灭金身不惧瘴毒，架光深入万古桃花瘴之中。然而毒瘴之中视野神识严重受限，[NAME]只得四处摸索。");
+					else
+						me:AddMsg("[NAME]依仗自己的浊之躯不惧瘴毒，架光深入万古桃花瘴之中。然而毒瘴之中视野神识严重受限，[NAME]只得四处摸索。");
+					end
+					if me:GetLuck() >= me:RandomInt(1, 16) then
+						local nN = me:RandomInt(1, 26)
+						if  nN >= 25 then
+							if world:GetWorldFlag(7) == 0 then
+								me:AddMsg("也是[NAME]机缘不错，竟然发现一尊在毒瘴中保留完整的遗骸。[NAME]一番搜索，找到了几本书册和许多宝物丹药。");me:DropEsoteric("DanFang_6");me:DropEsoteric("QunXianLu_2");world:SetWorldFlag(7, 1);me:DropAwardItemFromCache(story.ItemCache3, 1, 3);me:DropAwardItemFromCache(story.ItemCache4, 1, 3);
+							else
+								me:AddMsg("也是[NAME]机缘不错，竟然在毒瘴中找到一名陨落其中的修行者遗骸。一番搜索之下，找到了许多宝物丹药。");
+								local nQ = me:RandomInt(1, 4)
+								local nW = me:RandomInt(1, 4)
+								me:DropAwardItemFromCache(story.ItemCache3, 1, nQ);
+								me:DropAwardItemFromCache(story.ItemCache4, 1, nW);
+							end
+						elseif nN >= 12 and nN < 25 then 
+							me:AddMsg("也是[NAME]机缘不错，竟然在毒瘴中找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的宝贝。");
+							local nW = me:RandomInt(0, 2)
+							me:DropAwardItemFromCache(story.ItemCache3, 1, nW);
+						elseif nN >= 0 and nN < 12 then
+							me:AddMsg("也是[NAME]机缘不错，竟然在毒瘴中找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的丹药。");
+							local nW = me:RandomInt(0, 2)
+							me:DropAwardItemFromCache(story.ItemCache4, 1, nW);
+						end					
+					else
+						me:AddMsg("也许[NAME]机缘不够。一番搜索之下，空手而归。");
+					end
+				else
+					if me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Immortal") then
+						me:AddMsg("[NAME]依仗自己的不灭金身不惧瘴毒，架光深入万古桃花瘴之中，然而毒瘴之中视野神识严重受限，目不视物。");
+					else
+						me:AddMsg("[NAME]依仗自己的浊之躯不惧瘴毒，架光深入万古桃花瘴之中，然而毒瘴之中视野神识严重受限，目不视物。");
+					end
+					if world:GetWorldFlag(7) == 0 then
+						if me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Perception") then
+							me:AddMsg("[NAME]运起通天神识，瞬间毒瘴之中的情景一览无遗。[NAME]向着毒瘴深处进入，竟然发现一尊在毒瘴中保留完整的遗骸，一番搜索之下，[NAME]找到了几本书册和许多宝物丹药。");me:DropEsoteric("DanFang_6");me:DropEsoteric("QunXianLu_2");world:SetWorldFlag(7, 1);me:DropAwardItemFromCache(story.ItemCache3, 1, 3);me:DropAwardItemFromCache(story.ItemCache4, 1, 3);
+						else
+							me:AddMsg("[NAME]运起灵视神观，瞬间毒瘴之中的情景一览无遗。[NAME]向着毒瘴深处进入，竟然发现一尊在毒瘴中保留完整的遗骸，一番搜索之下，[NAME]找到了几本书册和许多宝物丹药。");me:DropEsoteric("DanFang_6");me:DropEsoteric("QunXianLu_2");world:SetWorldFlag(7, 1);me:DropAwardItemFromCache(story.ItemCache3, 1, 3);me:DropAwardItemFromCache(story.ItemCache4, 1, 3);
+						end
+					else
+						local nN = me:RandomInt(1, 26)
+						if nN >= 12 then 
+							if me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Perception") then
+								me:AddMsg("[NAME]运起通天神识，瞬间毒瘴之中的情景一览无遗。[NAME]找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的宝贝。");
+							else
+								me:AddMsg("[NAME]运起灵视神观，瞬间毒瘴之中的情景一览无遗。[NAME]找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的宝贝。");
+							end
+							local nW = me:RandomInt(0, 2)
+							me:DropAwardItemFromCache(story.ItemCache3, 1, nW);
+						elseif nN >= 0 and nN < 12 then
+							if me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Perception") then
+								me:AddMsg("[NAME]运起通天神识，瞬间毒瘴之中的情景一览无遗。[NAME]找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的丹药。");
+							else
+								me:AddMsg("[NAME]运起灵视神观，瞬间毒瘴之中的情景一览无遗。[NAME]找到一名陨落其中的修行者遗骸。一番搜索之下，找到了一些有用的丹药。");
+							end
+							local nW = me:RandomInt(0, 2)
+							me:DropAwardItemFromCache(story.ItemCache4, 1, nW);
+						else
+						end					
+					end
+				end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("[NAME]刚进入一小段时间就觉得浑身发出奇痒，[NAME]知道不妙，慌忙退出……")</NOResult>
+			</li>
+			<li>
+				<Display>离去</Display>
+				<OKResult>me:AddMsg("[NAME]知道此地凶险，如无特殊功法改换体质，万万不可进入。")</OKResult>
+			</li>
+		</Selections>
+	</Story>
+		
+	<Story Name="BaoZang_LiHenHai"  Parent="BaseFillingStory">
+		<DisplayName>离恨海</DisplayName>
+		<Desc>想不到天地造化居然会有这么神奇的地方，真不知道此地藏有什么秘密。</Desc>
+		<Kind>BaoZang_LiHenHai</Kind>
+		<Selections>
+			<li>
+				<Display>进入其中</Display>
+				<Condition><![CDATA[	
+				me:GetIntelligence() >= 6 and me:GetPhysique() >= 6 and me:GetPerception() >= 6 and me:GetGLevel() >= 6 and (me:CheckFeature("Retarded") == true or me:IsLearnedEsoteric("Gong9_Esoterica_5") == true or me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Oblivious") == true)
+				]]>
+				</Condition>
+				<DisplayCondition><![CDATA[	
+				world:GetWorldFlag(8) == 0
+				]]>
+				</DisplayCondition>
+				<OKResult><![CDATA[	
+				if me:IsLearnedEsoteric("Gong9_Esoterica_5") == true or me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Oblivious") == true then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却早已拥有不昧真灵，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]渐渐深入水下，竟然在离恨海的中心发现了一具仙人遗蜕。一番搜索后，[NAME]惊讶的发现，这竟然是四千年前修行界奇人天缺老人的遗蜕所在。");
+				else
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却因心智的缺陷，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]充满好奇的在离恨海中前进，竟然在离恨海的中心发现了一具仙人遗蜕。[NAME]笑嘻嘻的把仙人遗蜕搜了个遍，带着遗蜕上的全部宝贝回到了门派。");
+				end			world:SetWorldFlag(8,1);me:DropFabao(0,"Item_WeaponSword","Item_ExtremeJade","天缺神剑","四千年前修行界奇人天缺老人的随身佩剑，天缺老人据说天生智力残缺，如8岁孩童。但他却奇遇连连，以赤子之心入道，修为冠绝当代，最后于离恨海中慨然飞升。",1,12);me:DropAwardItem("Item_Dan_ExtremeLofty",1);me:DropAwardItem("Item_Dan_IncreaseLife3",2);me:DropAwardItem("Item_Dan_FiveBaseFromLife",3);me:DropAwardItem("Item_ExtremeJade",1)
+				]]>
+				</OKResult>
+				<NOResult>
+				<![CDATA[	
+				if me:CheckFeature("Retarded") == true then
+				
+					if me:GetPerception() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却因心智的缺陷，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]充满好奇的在离恨海中前进，却因为神识太低而迷了路，最终饶了好久才从中脱离出来。[NAME]对此地感到十分恐惧，慌乱的跑回了门派。")
+					elseif me:GetPhysique() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却因心智的缺陷，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]充满好奇的在离恨海中前进，但他却无法抵御此地神秘的雾气的侵蚀，随着深入其中，[NAME]越来越难受，最终还是无法忍受这痛苦，慌乱的跑回了门派。")
+					elseif me:GetGLevel() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却因心智的缺陷，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]充满好奇的在离恨海中前进，竟然在离恨海的中心发现了一具仙人遗蜕。[NAME]对仙人遗蜕充满兴趣，但是修为太低，被遗蜕遗留的神秘力量排斥而不得靠近。[NAME]十分不开心，对着遗蜕吐了口口水，气呼呼的离开了此地。");
+					elseif me:GetIntelligence() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却因心智的缺陷，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]充满好奇的在离恨海中前进，竟然在离恨海的中心发现了一具仙人遗蜕。可惜[NAME]悟性太差，他根本没有意识到这是一场天大的奇遇，只是笑嘻嘻的摸了摸仙人遗蜕的脸，扭头离开了此地。");
+					end
+				elseif (me:IsLearnedEsoteric("Gong9_Esoterica_5") == true or me:IsLearnedEsoteric("Gong_SanQing_Esoterica_Oblivious") == true) then	
+					if me:GetPerception() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却早已拥有不昧真灵，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]渐渐深入水下，却因为神识太低而迷了路，最终饶了好久才从中脱离出来。[NAME]无奈，只能离开此地。")
+					elseif me:GetPhysique() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却早已拥有不昧真灵，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]渐渐深入水下，但他的体质却无法抵御此地神秘的雾气的侵蚀，随着深入其中，痛苦逐渐无法忍受。[NAME]无奈，只能离开此地。")
+					elseif me:GetGLevel() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却早已拥有不昧真灵，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]渐渐深入水下，竟然在离恨海的中心发现了一具仙人遗蜕。但是[NAME]修为太低，被遗蜕遗留的神秘力量排斥而不得靠近，无奈之下只能离开此地。");
+					elseif me:GetIntelligence() < 6 then
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。离恨海的神秘力量试图挖掘[NAME]过去的悲伤悔恨爱恨离别，然而[NAME]却早已拥有不昧真灵，对那些感情毫无察觉，丝毫不在意。");me:AddMsg("[NAME]渐渐深入水下，竟然在离恨海的中心发现一片鱼虫绝迹之地。[NAME]颇感奇怪，但没有多想便路过此处。最终一无所获，离开此地。");
+					end
+				else		
+					me:AddMsg("[NAME]进入离恨海之中，瞬间陷入了层层叠叠的幻境里。[NAME]沉浸在自己的过去中，无法突破那些反复轮回的喜怒哀乐，终于心智崩溃，失去了意识。");me:AddMsg("等[NAME]再次醒来，发现自己躺在离恨海边缘，竟然连一步都没有踏入其中。");
+				end
+				]]>	
+				</NOResult>
+			</li>
+			<li>
+				<Display>离去</Display>
+				<DisplayCondition><![CDATA[	
+				world:GetWorldFlag(8) == 1
+				]]>
+				</DisplayCondition>
+				<OKResult>me:AddMsg("离恨海中的仙人遗蜕已经被搜光，没有必要再进入了。");</OKResult>
+			</li>
+			<li>
+				<Display>离去</Display>
+				<DisplayCondition><![CDATA[	
+				world:GetWorldFlag(8) == 0
+				]]>
+				</DisplayCondition>
+				<OKResult>me:AddMsg("没什么事还是不要进去了。");</OKResult>
+			</li>
+		</Selections>
+	</Story>-->
+	
+	<Story Name="BaoZang_QingLianShan21"  Parent="BaseFillingStory">
+		<DisplayName>神秘阵图</DisplayName>
+		<Desc>[NAME]发现阵图之上有四个凹槽似乎是阵眼之类的关键所在，除去发光的凹槽外，其他三个凹槽似乎完全沉寂，无法触动。</Desc>
+		<Selections>
+			<li>
+				<Display>注入法力</Display> 
+				
+				<DisplayCondition>
+				<![CDATA[	
+				world:GetWorldFlag(32) == 0 or world:GetWorldFlag(33) == 0 or world:GetWorldFlag(34) == 0 or world:GetWorldFlag(35) == 0
+				]]>
+				</DisplayCondition>
+				<OKResult><![CDATA[	
+				
+				local nQ = world.DayCount%112 + 8
+				if (nQ < 28 and world:GetWorldFlag(32) == 1) or 
+				(nQ >= 28 and nQ < 56 and world:GetWorldFlag(33) == 1) or
+				(nQ >= 56 and nQ < 84 and world:GetWorldFlag(34) == 1) or
+				(nQ >= 84 and nQ < 112 and world:GetWorldFlag(35) == 1) then
+					me:AddMsg("这部分阵图已经被点亮了。");
+				else
+					if  (nQ < 28 and me:GetGElementKind() == 3) or
+					(nQ >= 28 and nQ < 56 and me:GetGElementKind() == 2) or
+					(nQ >= 56 and nQ < 84 and me:GetGElementKind() == 5) or
+					(nQ >= 84 and nQ < 112 and me:GetGElementKind() == 1) or
+					me:GetGongName() == "Gong_SanQing_None" then
+						if me:GetGElementKind() == 3 then
+							me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。只见一道道碧绿的条纹从凹槽处快速蔓延，很快就填满了四分之一张阵图。");world:SetWorldFlag(32,1);me:SetFlag(37,1);
+						elseif me:GetGElementKind() == 2 then
+							me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。只见一道道赤红的条纹从凹槽处快速蔓延，很快就填满了四分之一张阵图。");world:SetWorldFlag(33,1);me:SetFlag(37,1);
+						elseif me:GetGElementKind() == 5 then
+							me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。只见一道道灿金的条纹从凹槽处快速蔓延，很快就填满了四分之一张阵图。");world:SetWorldFlag(34,1);me:SetFlag(37,1);
+						elseif me:GetGElementKind() == 1 then
+							me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。只见一道道漆黑的条纹从凹槽处快速蔓延，很快就填满了四分之一张阵图。");world:SetWorldFlag(35,1);me:SetFlag(37,1);
+						elseif me:GetGongName() == "Gong_SanQing_None" then
+							me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。只见一道道七彩的条纹从凹槽处快速蔓延，很快就填满了整张阵图。");world:SetWorldFlag(32,1);world:SetWorldFlag(33,1);world:SetWorldFlag(34,1);world:SetWorldFlag(35,1);me:SetFlag(37,1);
+						end
+						if world:GetWorldFlag(32) == 1 and world:GetWorldFlag(33) == 1 and world:GetWorldFlag(34) == 1 and world:GetWorldFlag(35) == 1 then
+							me:AddMsg("随着最后一片阵图被点亮，整张阵图光华大放。化做一张图卷投入[NAME]怀中");me:DropAwardItem("Item_QingLianShan_SiXiang", 1, "", -1, 1);
+						end
+					elseif (nQ < 28 and me:GetGElementKind() == 5) or
+					(nQ >= 28 and nQ < 56 and me:GetGElementKind() == 1) or
+					(nQ >= 56 and nQ < 84 and me:GetGElementKind() == 2) or
+					(nQ >= 84 and nQ < 112 and me:GetGElementKind() == 4) then
+						me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。没想到阵图上传来一股绝强的反震之力。瞬间将[NAME]的经脉震伤。");me:AddDamageRandomPart(4,"LingSpillsInjury",me:RandomFloat(0.4,0.8),"真气反震")
+					else
+						me:AddMsg("[NAME]尝试对发亮的凹槽中注入法力。然而注入的法力如同泥牛入海，毫无踪迹。");
+					end
+				end
+				me:TriggerStory("BaoZang_QingLianShan21");
+				]]></OKResult>
+			</li>
+			<li>
+				<Display>离开桌前</Display>
+				<OKResult><![CDATA[	
+				if world:GetWorldFlag(32) == 1 and world:GetWorldFlag(33) == 1 and world:GetWorldFlag(34) == 1 and world:GetWorldFlag(35) == 1 then
+					me:TriggerStory("BaoZang_QingLianShan2_end");
+				else
+					me:TriggerStory("BaoZang_QingLianShan2");
+				end
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="LingWu_DanXia"  Parent="BaseFillingStory">
+		<DisplayName>丹霞落日</DisplayName>
+		<Desc>[NAME]在丹霞绝壁看万千霞光自云海喷涌，倍感震撼。</Desc>
+		<Kind>LingWu_DanXia</Kind>
+		<Selections>
+			<li>
+				<Display>参悟</Display> 
+				<Tip>悟性与境界</Tip>
+				<Condition><![CDATA[	
+				me:GetIntelligence() >= 6 and me:GetGLevel() >= 4
+				]]>
+				</Condition>
+				<DisplayCondition><![CDATA[	
+				me:GetGElementKind() == 2 and me:IsLearnedEsoteric("Other_Esoterica_DanXia1") == false
+				]]>
+				</DisplayCondition>
+				<OKResult>me:AddMsg("[NAME]敏锐的捕捉到了那一丝灵光，盘膝而坐，自丹霞绝壁的奇景中参悟出一套心法。");me:LearnEsoteric("Other_Esoterica_DanXia1")</OKResult>
+				<NOResult>me:AddMsg("[NAME]苦苦思索，但是始终无法抓住那一闪而逝的灵光，只得无奈离去。");</NOResult>
+			</li>
+			<li>
+				<Display>参悟</Display> 
+				<Tip>悟性与境界</Tip>
+				<Condition><![CDATA[	
+				me:GetIntelligence() >= 6 and me:GetGLevel() >= 4
+				]]>
+				</Condition>
+				<DisplayCondition><![CDATA[	
+				me:GetGElementKind() == 3 and me:IsLearnedEsoteric("Other_Esoterica_DanXia2") == false
+				]]>
+				</DisplayCondition>
+				<OKResult>me:AddMsg("[NAME]敏锐的捕捉到了那一丝灵光，盘膝而坐，自丹霞绝壁的奇景中参悟出一套心法。");me:LearnEsoteric("Other_Esoterica_DanXia2")</OKResult>
+				<NOResult>me:AddMsg("[NAME]苦苦思索，但是始终无法抓住那一闪而逝的灵光，只得无奈离去。");</NOResult>
+			</li>
+			<li>
+				<Display>参悟</Display> 
+				<Tip>悟性与境界</Tip>
+				<Condition><![CDATA[	
+				me:GetIntelligence() >= 6 and me:GetGLevel() >= 4
+				]]>
+				</Condition>
+				<DisplayCondition><![CDATA[	
+				me:GetGongName() == "Gong_SanQing_None" and (me:IsLearnedEsoteric("Other_Esoterica_DanXia1") == false or me:IsLearnedEsoteric("Other_Esoterica_DanXia2") == false)
+				]]>
+				</DisplayCondition>
+				<OKResult>me:AddMsg("[NAME]敏锐的捕捉到了那一丝灵光，盘膝而坐，自丹霞绝壁的奇景中参悟出心法。");me:LearnEsoteric("Other_Esoterica_DanXia1");me:LearnEsoteric("Other_Esoterica_DanXia2")</OKResult>
+				<NOResult>me:AddMsg("[NAME]苦苦思索，但是始终无法抓住那一闪而逝的灵光，只得无奈离去。");</NOResult>
+			</li>
+			<li>
+				<Display>欣赏美景</Display>
+				<OKResult>me:AddMsg("[NAME]欣赏了这罕见的奇景，随后离开了此地。");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Secrets_TianJi"  Parent="BaseFillingStory">
+		<DisplayName>古天极符</DisplayName>
+		<Desc>[NAME]惊讶的发现，此处洞口的奇特纹理居然和《群仙录》中记载的天极老祖所用的个人身份标识十分吻合，只是有不少缺失之处。难道此处竟然和最终下落不明的天极老祖有关？</Desc>
+		<Selections>
+			<li>
+				<Display>尝试破解</Display>
+				<OKResult><![CDATA[	
+				if me:GetGongName() == "Gong_7_Huo" then
+					me:AddMsg(XT("[NAME]以《太上忘情道》所修炼的灵气将地下的纹理一一补全。在符号完整的一瞬间，[NAME]眼前仿佛一片迷雾飞过。眨眼之间，面前的景象已然变得截然不同！"));story:FinishSecret();me:TriggerStory("Secrets_TianJi1");world:UnLockIllHand_MapStory(11);
+				elseif me:GetGongName() == "Gong_SanQing_None" then
+					me:AddMsg(XT("[NAME]以《三清秘传》所修炼的灵气将地下的纹理一一补全。在符号完整的一瞬间，[NAME]眼前仿佛一片迷雾飞过。眨眼之间，面前的景象已然变得截然不同！"));story:FinishSecret();me:TriggerStory("Secrets_TianJi1");world:UnLockIllHand_MapStory(11);
+				else
+					me:AddMsg(XT("[NAME]以灵气将地下的纹理一一补全。然而却无事发生过。似乎这些纹理对[NAME]的灵气并无反应……[NAME]又做了各种尝试，依然毫无反应，只得遗憾离去。"));
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display> 
+				<OKResult>me:AddMsg(XT("[NAME]离开了此处。"));</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

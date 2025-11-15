@@ -1,0 +1,32 @@
+﻿<Stories><List>	
+	<Story Name="Story_SQBianHuan"  Parent="BaseFillingStory">
+		<DisplayName>遮天变</DisplayName>
+		<Desc>天道对三清秘传有特殊关照，对其在世真仙的出行、渡劫等事宜都是睁一只眼闭一只眼。</Desc>
+		<Selections>
+			<li>
+				<Display>切换模式</Display> 
+				<OKResult><![CDATA[
+				local name = me.npcObj.Name;
+				local X = "逍遥模式"
+				local J = "降临模式"
+				local Q = "取消选择"
+				world:ShowStoryBox("三清秘传能够在可以外出历练的逍遥模式和可以进入地图的降临模式之间切换。\n[color=#ED1C24]注意：所有三清秘传修行者会同步切换。[/color]", "模式切换", {X,J,Q},
+				function(KEY)
+					if KEY == 0 then
+						CS.XiaWorld.PracticeMgr.Instance:GetGongDef("Gong_SanQing_None").Stages[5].Necks[0].NeckCountdown = nil
+						return ""..name.."将三清秘传切换为了逍遥模式。"
+					end
+					if KEY == 1 then
+						CS.XiaWorld.PracticeMgr.Instance:GetGongDef("Gong_SanQing_None").Stages[5].Necks[0].NeckCountdown = 60000
+						return ""..name.."将三清秘传切换为了降临模式。"
+					end
+					if KEY == 3 then
+						return ""..name.."取消使用遮天变。"
+					end
+				end
+ 				);
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

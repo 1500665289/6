@@ -1,0 +1,39 @@
+﻿<ZhenNodeDefs><List>
+	<!-- 阵枢 -->
+	
+	<Def Name="ZhenMainNode_SQ" DisplayName="三清归一" Main="1" Base="2">
+		<Lv>4</Lv>
+		<SlotSuits>
+			<li>SlotSuit_SQ_1</li>
+			<li>SlotSuit_SQ_2</li>
+			<li>SlotSuit_SQ_3</li>
+		</SlotSuits>
+		<Slot>
+			<li SlotName="SQ_1" Pos="0"/>
+			<li SlotName="SQ_2" Pos="4"/>
+			<li SlotName="SQ_3" Pos="2"/>
+		</Slot>
+	</Def>
+	
+	<!-- 阵眼 -->
+	<Def Name="ZhenNode_SQ_1" DisplayName="玉清" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="SQ_1" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_SQ_2" DisplayName="太清" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="SQ_2" Pos="0"/>
+		</Slot>
+	</Def>
+	
+	<Def Name="ZhenNode_SQ_3" DisplayName="上清" Main="0" Base="2">
+		<Lv>4</Lv>
+		<Slot>
+			<li SlotName="SQ_3" Pos="0"/>
+		</Slot>
+	</Def>
+</List></ZhenNodeDefs>

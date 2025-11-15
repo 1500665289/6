@@ -1,0 +1,190 @@
+﻿<Magics><List>
+	<Magic Name="Magic_SQBaipiao" Type="Class">
+		<DisplayName>读心·索要</DisplayName>
+		<Desc>揣摩行商的内心，以博得对方的好感。也许商人并不像想象中那般冷血呢？</Desc>
+		<Icon>res\Sprs\ui\icon_zhufu01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>SQBaipiaoWalkTer</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个行商</TargetDesc>
+		<CostLing>100</CostLing>
+	</Magic>
+	
+	<Magic Name="Magic_SQBrokeHeartLock" Type="Class">
+		<DisplayName>读心·破防</DisplayName>
+		<Desc>感知一名访客或外人的内心，打动对方，突破其心防。</Desc>
+		<Icon>res\Sprs\ui\icon_zhufu01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget>
+		<ClassName>SQBrokeHeartLock</ClassName>
+		<TargetDesc>请选择一个目标</TargetDesc>
+		<CostLing>100</CostLing>
+		<ShowInPAttacker>1</ShowInPAttacker>
+	</Magic>
+	
+	<Magic Name="SQDefuseZhinian" Type="Class">
+		<DisplayName>涤心</DisplayName>
+		<Desc>为角色化解一个执念。并获得一个执念结晶。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<TargetDesc>请选择已经显现执念的角色</TargetDesc>
+		<Param1>100</Param1><!--消耗时间-->
+		<sParam1>Item_God_ZhiNianJieJing</sParam1><!--掉落物品-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodDefuseZhinian</ClassName>
+		<CostFaith>0</CostFaith>
+		<CostLing>5000</CostLing>
+	</Magic>
+	
+	<Magic Name="SQOutspreadAttractive" Type="Class">
+		<DisplayName>祥云瑞兽</DisplayName>
+		<Desc>派其前往一个代理点，以自身的成长和属性为代价向百姓展示祥瑞，从而增加我方的吸引力。</Desc>
+		<Icon>res\Sprs\ui\icon_tuoshan01</Icon>
+		<SelectMode>None</SelectMode>
+		<Ani>xinzhai</Ani>
+		<ClassName>SQoutspread</ClassName>
+		<Param1>3000</Param1>
+		<Param2>400006</Param2>
+		<sParam1>Ls_Outspread_Attractive</sParam1>
+		<sParam2>祥瑞</sParam2>
+		<CostFaith>0</CostFaith>
+	</Magic>
+	
+	<Magic Name="SQOutspreadStability" Type="Class">
+		<DisplayName>威震四方</DisplayName>
+		<Desc>派其前往一个代理点，以自身的成长和属性为代价向百姓展示神威，从而增加该地的稳定度。</Desc>
+		<Icon>res\Sprs\ui\icon_qizhang01</Icon>
+		<SelectMode>None</SelectMode>
+		<Ani>xinzhai</Ani>
+		<ClassName>SQoutspread</ClassName>
+		<Param1>3000</Param1>
+		<Param2>400007</Param2>
+		<sParam1>Ls_Outspread_Stability</sParam1>
+		<sParam2>神威</sParam2>
+		<CostFaith>0</CostFaith>
+	</Magic>
+	
+	<Magic Name="SQGod_TongLing_Plant" Type="Class">
+		<DisplayName>神恩赐命</DisplayName>
+		<Desc>花树有命，草木无情。欲使植物通灵，需要消耗9枚执念结晶与1枚元灵之珀尝试唤醒其灵，通灵结果需要一段时间才能出现。植物在通灵中时不可被再次通灵。施术者道行越高，植物被通灵次数越多，越容易通灵成功。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>10</Param1><!--消耗时间-->
+		<Param2>0</Param2><!--获得神性-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Plant|NoTongLing</SelectTarget>
+		<ClassName>Magic_TongLing</ClassName>
+		<TargetDesc>请选择一个植物</TargetDesc>
+		<TargetAni>dazuo</TargetAni>
+		<ItemCost>
+		    <li name="Item_God_ZhiNianJieJing" count="9"/>
+		    <li name="Item_SoulCrystalYuanLing" count="1"/>
+		</ItemCost>
+	</Magic>
+	
+	<Magic Name="Magic_SQJuBao" Type="Class">
+		<DisplayName>聚宝功</DisplayName>
+		<Desc>消耗灵气获取稀有物品，需要当前灵气值大于一百万点才能使用。</Desc>
+		<Icon>res\Sprs\ui\icon_tianyan01</Icon>
+		<Kind>None</Kind>
+		<Param1>5</Param1>
+		<CostLing>0</CostLing>
+		<Penalty>0</Penalty>
+		<SelectMode>None</SelectMode>
+		<ClassName>SQJuBao</ClassName>
+	</Magic>
+	
+	<Magic Name="Magic_SQXiLian" Type="Class">
+		<DisplayName>天劫淬</DisplayName>
+		<Desc>消耗大量灵气将一件法宝原地渡劫三十六次。</Desc>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1>
+		<CostLing>1000000</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<SelectMode>Single</SelectMode>
+		<ClassName>SQXiLian</ClassName>
+		<SelectTarget>Item</SelectTarget>
+		<TargetDesc>请选择一件法宝。</TargetDesc>
+	</Magic>
+	
+	<Magic Name="Magic_SQXianKui" Type="Class">
+		<DisplayName>仙馈契</DisplayName>
+		<Desc>消耗大量灵气给予一名角色一百万点修为。</Desc>
+		<Icon>res\Sprs\ui\icon_sheshen01</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1>
+		<CostLing>1000000</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<SelectMode>Single</SelectMode>
+		<ClassName>SQXianKui</ClassName>
+		<SelectTarget>Npc</SelectTarget>
+		<TargetDesc>请选择一名内门角色。</TargetDesc>
+	</Magic>
+	
+<!--
+	<Magic Name="Magic_SQReborn" Type="Class">
+		<DisplayName>苏生</DisplayName>
+		<Desc>消耗大量灵气将弥留状态的角色无损复活。</Desc>
+		<Icon>res\Sprs\ui\icon_yinshen01</Icon>
+		<Kind>Good</Kind>
+		<CastFavour>ThankTreat</CastFavour>
+		<TargetMood>BuildBody</TargetMood>
+		<Param1>30</Param1>
+		<CostLing>1000000</CostLing>
+		<Penalty>0</Penalty>
+		<SelectMode>Single</SelectMode>
+		<ClassName>SQReborn</ClassName>
+		<SelectTarget>Npc</SelectTarget>
+		<TargetDesc>请选择一名弥留的角色。</TargetDesc>
+	</Magic>
+-->
+	
+	<Magic Name="Magic_SQReborn" Type="Class">
+		<DisplayName>苏生</DisplayName>
+		<Desc>消耗大量灵气将一名弥留或尸体状态的角色复活。</Desc>
+		<Icon>res\Sprs\ui\icon_yinshen01</Icon>
+		<TargetDesc>请选择已死亡或弥留的角色</TargetDesc>		
+		<Param1>30</Param1>
+		<Param2>0</Param2>
+		<CostLing>1000000</CostLing>
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_GodResurrectionA</ClassName>
+	</Magic>	
+	
+	<Magic Name="Magic_SQYouCui" Type="Class">
+		<DisplayName>通幽圣手</DisplayName>
+		<Desc>消耗大量灵气将一件物品变为圣物。</Desc>
+		<Icon>res\Sprs\ui\icon_xixing01</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1>
+		<CostLing>1000000</CostLing>
+		<CostAge>0</CostAge>
+		<Penalty>0</Penalty>
+		<SelectMode>Single</SelectMode>
+		<ClassName>SQYouCui</ClassName>
+		<SelectTarget>Item</SelectTarget>
+		<TargetDesc>请选择一件物品。</TargetDesc>
+	</Magic>
+	
+	<Magic Name="Magic_SQBianHuan" Type="Class">
+		<DisplayName>遮天变</DisplayName>
+		<Desc>使三清秘传在可以外出历练的逍遥模式和可以进入地图的降临模式之间切换。</Desc>
+		<Icon>res/Sprs/ui/icon_tihu01</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<CostLing>0</CostLing>
+		<Penalty>0</Penalty>
+		<SelectMode>None</SelectMode>
+		<ClassName>SQBianHuan</ClassName>
+	</Magic>
+</List></Magics>

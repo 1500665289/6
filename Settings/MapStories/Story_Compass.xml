@@ -1,0 +1,19 @@
+﻿<Stories><List>
+	<Story Name="Compass"  Parent="BaseFillingStory">
+		<DisplayName>太一司南</DisplayName>
+		<Desc>通过此物件在大地图上标记太一遗迹的位置，使较旧的存档可以正常获得三清秘传功法。</Desc>
+		<Selections>
+			<li>
+				<Display>解锁地点：太一遗迹</Display>
+				<OKResult>
+					me:AddMsg(XT("太一司南准确地指出了太一遗迹的位置，现在可以正常进行遗落之物秘闻了。"));
+					me:UnLockPlace("Place_BirthPlace15");
+				</OKResult>
+			</li>
+			<li>
+				<Display>离去</Display>
+				<OKResult></OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

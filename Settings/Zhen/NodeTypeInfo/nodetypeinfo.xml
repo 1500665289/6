@@ -1,0 +1,10 @@
+﻿<Defs><List>
+	<!-- Lv4 -->
+	
+	<Def Name="SQ_1" DisplayName="玉">
+	</Def>
+	<Def Name="SQ_2" DisplayName="太">
+	</Def>
+	<Def Name="SQ_3" DisplayName="上">
+	</Def>
+</List></Defs>

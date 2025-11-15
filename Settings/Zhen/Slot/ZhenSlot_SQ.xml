@@ -1,0 +1,41 @@
+﻿<ZhenSlotDefs><List>
+	<!-- Lv4 -->
+	
+	<Def Name="SQ_1" DisplayName="玉">
+		<Lv>4</Lv>
+		<SlotType>SQ_1</SlotType> 
+		<Effect>
+			<li Type="SkillCooldownBasev" Value="3" />
+			<li Type="ReduceCostBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="SkillCooldownAddp" Value="1" />
+			<li Type="ReduceCostAddp" Value="1" />
+		</CoreEffect>
+	</Def>
+	<Def Name="SQ_2" DisplayName="太">
+		<Lv>4</Lv>
+		<SlotType>SQ_2</SlotType> 
+		<Effect>
+			<li Type="MagicPowerBasev" Value="3" />
+			<li Type="SheildBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="MagicPowerAddp" Value="1" />
+			<li Type="SheildAddp" Value="1" />
+		</CoreEffect>
+	</Def>
+	<Def Name="SQ_3" DisplayName="上">
+		<Lv>4</Lv>
+		<SlotType>SQ_3</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="3" />
+			<li Type="StabilityBasev" Value="3" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="1" />
+			<li Type="StabilityAddp" Value="1" />
+		</CoreEffect>
+	</Def>
+	
+</List></ZhenSlotDefs>

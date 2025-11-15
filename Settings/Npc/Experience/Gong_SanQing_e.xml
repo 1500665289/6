@@ -1,0 +1,12 @@
+﻿<Experiences><List>
+	
+	<Experience Name="ExperiencesSQ">
+		<DisplayName>三清传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《三清秘传》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《三清秘传》[/color][/size]</Desc>
+		<Point>5</Point>
+		<Gongs>
+			<li>Gong_SanQing_None</li>
+		</Gongs>
+	</Experience>
+	
+</List></Experiences>

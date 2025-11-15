@@ -1,0 +1,854 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Gong_SanQing_Esoterica_01">
+		<DisplayName>道法自然</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_huti</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>道囊括了天地间所有事物的属性，以自己为法则。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高气感技能20级\n  提高灵气最大值100000点\n  提高灵气最大值倍率10\n  提高灵气恢复速度倍率1000\n  提高潜力1点[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_01</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_02">
+		<DisplayName>神行飞剑</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>缩地成寸，以为神行。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高法宝速度倍率1\n  提高法宝转向速度倍率1\n  提高历练飞行速度10点[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_02</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_03">
+		<DisplayName>五行纵横</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>五行强调整体，旨在描述事物的运动形式以及转化关系。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高战斗技能20级\n  提高术法威力倍率100\n  降低术法释放时间倍率0.75\n  降低术法冷却时间倍率0.75\n  提高灵气护盾效果4点\n\n习得术法：\n  真气爆破[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_03</Modifier>
+		<Skills>
+			<li>Gong_SanQing_DamageSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_04">
+		<DisplayName>仙道贵生</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>仙道贵生，无量度人。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高寿元500年\n  提高修炼速度倍率5\n  提高学习速度倍率5\n  提高食物消耗速度倍率1\n  提高饮气效率1点\n  提高精元获得率0.025点[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_04</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_05">
+		<DisplayName>方寸乾坤</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>问道乾坤里，修身方寸间。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高御器威力倍率200\n  提高法宝灵气值倍率100\n  提高法宝灵气恢复速度倍率100\n  提高潜力1点[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_05</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_06">
+		<DisplayName>否极泰来</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>泰，大通也。否备鄙反，闭也，塞也。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  降低道行50点\n\n解锁 阵枢：\n  三清归一\n\n解锁 阵眼：\n  玉清\n  太清\n  上清[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_06</Modifier>
+		<ZhenNodes>
+			<li>ZhenMainNode_SQ</li>
+			<li>ZhenNode_SQ_1</li>
+			<li>ZhenNode_SQ_2</li>
+			<li>ZhenNode_SQ_3</li>
+		</ZhenNodes>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_07">
+		<DisplayName>形神俱妙</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>形化为气，气化为神，神与道合而无形，变化不测。</Desc>
+		<GodSoulCount>24</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高五维各2点\n  突破战斗技能极限5级\n  突破气感技能极限5级\n  突破御器技能极限5级\n  突破术法技能极限5级\n  突破护体技能极限5级\n  突破炼丹技能极限5级\n  突破炼器技能极限5级\n  突破阵法技能极限5级\n  增加二十四条元神分神\n  法宝数量加五[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_07</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Prophesy">
+		<DisplayName>神机妙算</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>智算若神也。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  周天神算\n  大衍神算\n  六壬神算[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Prophesy</li>
+			<li>Prophesy_MapStory</li>
+			<li>LiuRenShensuan</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Prophesy_1">
+		<DisplayName>心灵交感</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_zhoutian01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>智算若神也。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高金属性伤害减免0.2点\n\n习得神通：\n  读心·索要\n  读心·破防[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQBaipiao</li>
+			<li>Magic_SQBrokeHeartLock</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_041</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Perception">
+		<DisplayName>通天神识</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>借助坤元之力，维持专注，可识破大多数障眼术法，且提高灵气恢复速度。</Desc>
+		<GodSoulCount>8</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>Jin</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高灵气恢复速度倍率2000\n  不再睡眠\n  增加八条元神分神\n  破除地图迷雾[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Perception</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_LingMake">
+		<DisplayName>灵气固化</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_lingjing01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>灵气在心，一来一逝，其细无内，其大无外。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  炼制灵石\n  炼制灵晶[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingStoneMake</li>
+			<li>LingCrystalMake</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_TongLing">
+		<DisplayName>万物有灵</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_lingjing01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>夫天地者万物之逆旅也，光阴者百代之过客也。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高木属性伤害减免0.2点\n\n习得神通：\n  玄魂造命\n  命火筑灵\n  神恩赐命[/color][/size]</EffectDesc>
+		<Magics>
+			<li>YouTongLing_Item</li>
+			<li>LingTongLing_Building</li>
+			<li>SQGod_TongLing_Plant</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_042</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_FabaoMake">
+		<DisplayName>上清灵宝真经</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_peifang</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>灵宝天尊门下独传的炼器之术修订版，合万物物性之奥妙于一册，堪称炼器术的无上秘典。</Desc>
+		<GodSoulCount>8</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>Mu</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高法宝炼制速度50点\n  提高法宝炼制成功率10点\n  提高法宝炼制品阶加成10点\n  提高法宝炼制质量1点\n  提高神器练成几率倍率100\n  增加八条元神分神\n\n习得符图：\n  太上通宝符\n  五方灵宝符[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_FabaoMake</Modifier>
+		<Spells>
+			<li>Spell_FabaoMake_SuccessRateAddV</li>
+			<li>Spell_FabaoMake_LingInheritRateAddV</li>
+		</Spells>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Emotion">
+		<DisplayName>调心术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_zhufu01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>恭己每从俭，清心常保真。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  清心咒\n  慧剑斩念\n  涤心[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_8</li>
+			<li>AbsorbGong_10</li>
+			<li>SQDefuseZhinian</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Outspread">
+		<DisplayName>泽惠生民</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_zhufu01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>一别都门三改火，天涯踏尽红尘。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高水属性伤害减免0.2点\n\n习得神通：\n  祥云瑞兽\n  威震四方[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SQOutspreadAttractive</li>
+			<li>SQOutspreadStability</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_043</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Oblivious">
+		<DisplayName>忘情不昧</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>凝聚万世记忆，以忘情之心阅人间，万事具足，抵达不昧心境。修习此法可使心境通明，永不退转。</Desc>
+		<GodSoulCount>8</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>Shui</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  不会感到疼痛\n  提高心境至满值\n  不再娱乐\n  增加八条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Oblivious</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_HealingDamage">
+		<DisplayName>治愈术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zaizao01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>再造之恩，不可妄属。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  化伤术\n  再造术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Damage</li>
+			<li>BuildBody</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_ZaoHuaSuTi">
+		<DisplayName>炼体术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zaizao01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>何意百炼刚，化为绕指柔。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高火属性伤害减免0.2点\n\n习得神通：\n  造化塑体[/color][/size]</EffectDesc>
+		<Magics>
+			<li>ZaoHuaSuTi</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_044</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_DanMake">
+		<DisplayName>太清金丹大要</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_liandan</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>太上所传炼丹秘要修订版，是道家千百年外丹术的精华。</Desc>
+		<GodSoulCount>8</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>Huo</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高炼丹产量10点\n  提高炼丹成功率10点\n  提高炼丹速度10点\n  增加八条元神分神\n\n习得丹方：\n  筑基丹\n  疗伤丹\n  归源散\n  极乐丹\n  辟谷丹\n  清心丹\n  庚金万化丹\n  碧春丹\n  天一承气散\n  火真丹\n  定坤丹\n  紫阳丹\n  黄庭丹\n  黄芽丹\n  血竭散\n  长生丹\n  玄牝续命散\n  九转金丹\n  万灵散\n\n习得符图：\n  兜率神符\n  万化承丹符[/color][/size]</EffectDesc>
+		<EffectDesc></EffectDesc>
+		<Dans>
+			<li>BasePracticeDrug</li>
+			<li>Dan_CureFiveElementDamage</li>
+			<li>Dan_Restore</li>
+			<li>Dan_Happiness</li>
+			<li>Dan_NoHunger</li>
+			<li>Dan_CalmDown</li>
+			<li>Dan_CureJinDamage</li>
+			<li>Dan_CureMuDamage</li>
+			<li>Dan_CureShuiDamage</li>
+			<li>Dan_CureHuoDamage</li>
+			<li>Dan_CureTuDamage</li>
+			<li>Dan_Ling2</li>
+			<li>Dan_PracticeRate</li>
+			<li>Dan_PracticeSpeed</li>
+			<li>Dan_HundredRefine</li>
+			<li>Dan_IncreaseLife1</li>
+			<li>Dan_IncreaseLife2</li>
+			<li>Dan_JingYuan3</li>
+			<li>Dan_Ling3</li>
+		</Dans>
+		<Spells>
+			<li>Spell_DanMake_SuccessRateAddV</li>
+			<li>Spell_DanMake_YieldAddP</li>
+		</Spells>
+		<Modifier>Gong_SanQing_Esoterica_DanMake</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_SoulCrystalPowerUp">
+		<DisplayName>珀淬之法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_lingcui01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>莫许杯深琥珀浓，未成沉醉意先融。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  凝珀诀\n  幽淬之法\n  灵淬之法[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MakeSoulCrystal</li>
+			<li>SoulCrystalYouPowerUp</li>
+			<li>SoulCrystalLingPowerUp</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_SoulCrystalPowerUp_1">
+		<DisplayName>元灵补天</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_lingcui01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>女娲炼石补天处，石破天惊逗秋雨。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高土属性伤害减免0.2点\n\n习得神通：\n  元灵补天诀[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_YuanLing</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_045</Modifier>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Immortal">
+		<DisplayName>不灭金身</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>成就非人之身躯，无视一切蛊毒邪法。</Desc>
+		<GodSoulCount>8</GodSoulCount>
+		<GLevel>God</GLevel>
+		<Element>Tu</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高寿元500年\n  提高最低极限温度-200度\n  提高最高极限温度+1000度\n  提高自然恢复力倍率2\n  不再饮水\n  提高食物消耗速度倍率2\n  提高饮气效率2点\n  提高精元获得率倍率1\n  增加八条元神分神[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Immortal</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Fengshui">
+		<DisplayName>奇迹眼·风水之瞳</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_tianyan01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>气乘风则散，界水则止。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  风水鉴定[/color][/size]</EffectDesc>
+		<Magics>
+			<li>FengshuiItemOpen</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_011</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Fengshui_1">
+		<DisplayName>奇迹眼·洞真之瞳</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_tianyan01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>灵秘不杂，故得名真。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高火属性伤害减免0.1点\n  在拍卖中看破一些物品的真面目[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Magic_Esoterica_012</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_ClosedDoor">
+		<DisplayName>入定之术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_ruding01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>入定者，水火不能害，亦不命终。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  水镜观心定\n  玉清定境[/color][/size]</EffectDesc>
+		<Magics>
+			<li>ClosedDoor_Gong1</li>
+			<li>ClosedDoor_Gong4</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Puppet">
+		<DisplayName>傀儡术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_kuilei01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>僵尸倚窟，枯骨尚全。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  赋灵术\n  御灵术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuidPuppet</li>
+			<li>MakePuppet</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_021</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Emotion_Bible">
+		<DisplayName>通心术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_kuilei01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>造物无言却有情，每于寒尽觉春生。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高金属性伤害减免0.1点\n\n习得神通：\n  造化气息\n  通心：愤恨\n  通心：喜乐\n  通心：思念\n  通心：惧怖\n  通心：忧虑[/color][/size]</EffectDesc>
+		<Magics>
+			<li>DianHua</li>
+			<li>Magic_Angry</li>
+			<li>Magic_Happy</li>
+			<li>Magic_Miss</li>
+			<li>Magic_Afraid</li>
+			<li>Magic_Worry</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_022</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Zhiwu">
+		<DisplayName>花朝·百花之礼</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yumu01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>十里楼台倚翠微，百花深处杜鹃啼。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高木属性伤害减免0.1点\n\n习得神通：\n  御木诀[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PlantGrowUp</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_031</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Zhiwu_1">
+		<DisplayName>花朝·百花之祝</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yumu01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>百花生日是良辰，未到花朝一半春。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高木属性伤害减免0.2点\n\n习得神通：\n  万木回春[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PlantGrowUp_Gong9</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_032</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_PrayForWeather">
+		<DisplayName>祈天经·风云变幻</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_quyun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>好雨知时节，当春乃发生。随风潜入夜，润物细无声。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高水属性伤害减免0.1点\n\n习得神通：\n  驱云诀\n  求雨术\n  甘霖术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForSun</li>
+			<li>PrayForRain</li>
+			<li>BuildRain</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_034</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_PrayForWeather_1">
+		<DisplayName>祈天经·无妄天灾</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_quyun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>四时更变化，天道有亏盈。常恐今已没，须臾还复生。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高水属性伤害减免0.1点\n  提高火属性伤害减免0.1点\n  提高土属性伤害减免0.1点\n  提高木属性伤害减免0.1点\n  提高金属性伤害减免0.1点\n\n习得神通：\n  暴雨术\n  焚风术\n  尘暴术\n  毒瘴术\n  雷暴术[/color][/size]</EffectDesc>
+		<Magics>
+
+			<li>PrayForRainstorm</li>
+			<li>PrayForFohn</li>
+			<li>PrayForDustStorm</li>
+			<li>PrayForMiasma</li>
+			<li>PrayForLightningStorm</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_035</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_ShanHeJue">
+		<DisplayName>山河诀·江山易改</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_youcui01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>4</Difficulty>
+		<Desc>满目山河空念远，落花风雨更伤春。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高土属性伤害减免0.1点\n\n习得神通：\n  造山术\n  开湖术\n  造陆术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildMine</li>
+			<li>BuildSea</li>
+			<li>BuildLand</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_036</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_ShanHeJue_1">
+		<DisplayName>山河诀·造化山河</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_youcui01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>江山如画，一时多少豪杰。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高土属性伤害减免0.2点\n\n习得神通：\n  造化灵土\n  造化灵池\n  造化沃土\n\n习得丹方：\n  灵源种\n  造化玉砂\n\n解锁建筑：\n  造化玉池[/color][/size]</EffectDesc>
+		<Magics>
+			<li>BuildLing</li>
+			<li>BuildLingWater</li>
+			<li>BuildFertileSoil</li>
+		</Magics>
+		<Buildings>
+			<li>SmallPool</li>
+		</Buildings>
+		<Dans>
+			<li>Dan_LingYuanSha</li>
+			<li>Dan_LingYuanZhong</li>
+		</Dans>
+		<Modifier>Gong_SanQing_Magic_Esoterica_037</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_JieJie">
+		<DisplayName>时空界断</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_zhaolei01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>12</Difficulty>
+		<Desc>满宫明月梨花白，故人万里关山隔。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高水属性伤害减免0.2点\n  提高火属性伤害减免0.2点\n  提高金属性伤害减免0.2点\n\n习得神通：\n  九阴真水界\n  九阳神火界\n  北斗剑界[/color][/size]</EffectDesc>
+		<Magics>
+			<li>PrayForZhenShuiJieJie_Gong1</li>
+			<li>PrayForZhenHuoJieJie_Gong10</li>
+			<li>PrayForBeiDouJianJie_Gong8</li>
+		</Magics>
+		<Modifier>Gong_SanQing_Magic_Esoterica_038</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_AbsorbLing">
+		<DisplayName>集灵五法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_lingxi01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>从天地、草木、生灵乃至死尸之间吸取灵气。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  灵息诀\n  冥灵真法\n  天妖化血术\n  托体同山诀\n  吸星掌[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbLing_Aoe</li>
+			<li>AbsorbLing_Live</li>
+			<li>AbsorbLing_Body</li>
+			<li>AbsorbLing_Thing</li>
+			<li>AbsorbLing_Item</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_AbsorbGong">
+		<DisplayName>摄修七诀</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_dinglu01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>从无修为的同类身上寻找修炼的捷径。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  元央归息法\n  如意幻境\n  九幽炼神\n  炼魂\n  他化自在大法\n  魂体寄生\n  献祭[/color][/size]</EffectDesc>
+		<Magics>
+			<li>AbsorbGong_1_Gong9</li>
+			<li>AbsorbGong_2_Gong7</li>
+			<li>AbsorbGong_3_Gong11</li>
+			<li>AbsorbGong_4</li>
+			<li>AbsorbGong_5</li>
+			<li>AbsorbGong_6</li>
+			<li>AbsorbGong_7</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_KongZhi">
+		<DisplayName>四象攻心</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_tongxiu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>以温和或暴力的手段改变他人的心智。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  灵犀咒\n  心印诀\n  天魔舞\n  五印刻神[/color][/size]</EffectDesc>
+		<Magics>
+			<li>LingXiZhou</li>
+			<li>XinYinJue</li>
+			<li>TianMoWu</li>
+			<li>WuYinKeShen</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Healing">
+		<DisplayName>点仙术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zaizaoxingshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>10</Difficulty>
+		<Desc>不说金丹能点化，空教弟子学长生。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：\n  伐毛洗髓\n  醍醐灌顶\n  再造形神\n  开天眼[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Healing_Physique</li>
+			<li>Healing_Intelligence</li>
+			<li>Healing_Charisma</li>
+			<li>Healing_Perception</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_Jin">
+		<DisplayName>魔剑斩妖</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>将自身元神与法宝共鸣，极大的提高法宝威力。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  魔剑斩妖[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_FabaoSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_Mu">
+		<DisplayName>六合破阵</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>调动天地间的灵能，对敌方阵法造成大量稳定度伤害。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  六合破阵[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_ZhenSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_Shui">
+		<DisplayName>慈航普度</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>引动天地间的癸水之力，给所有友方恢复灵气。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  慈航普度[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_HealthSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_Huo">
+		<DisplayName>焚神祝福</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>借助天地间至阳之力，施展毁灭性的打击。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  焚神祝福[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_SkillSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_Tu">
+		<DisplayName>太虚护佑</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>增强所有己方的灵气护盾效果。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  太虚护佑[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_SheildSkill</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_None">
+		<DisplayName>鸿蒙神光</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>6</Difficulty>
+		<Desc>发出一道迅捷无比的神光毁灭目标元神。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Chaos</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  鸿蒙灭绝神光[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_DamageSkill2</li>
+		</Skills>
+	</Esoterica> 
+	
+	<Esoterica Name="Gong_SanQing_FightSkill_None_1">
+		<DisplayName>灵能干扰</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shufa</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>8</Difficulty>
+		<Desc>以灵力威压禁止对方行动或法宝、术法的使用。</Desc>
+		<GLevel>God</GLevel>
+		<Element>Chaos</Element>
+		<Type>None</Type>
+		<Exp>2000</Exp>
+		<EffectDesc>[size=10][color=#D06508]习得术法：\n  睡眠\n  封印\n  沉默[/color][/size]</EffectDesc>
+		<Skills>
+			<li>Gong_SanQing_Confuse</li>
+			<li>Gong_SanQing_Fanshi</li>
+			<li>Gong_SanQing_Rongduan</li>
+		</Skills>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Jin">
+		<DisplayName>庚金带煞</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>庚金带煞，刚健为最。得水而清，得火而锐。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高神识1点\n  提高御器技能20级\n  提高御器威力倍率200\n  提高法宝灵气值倍率100\n  提高法宝灵气恢复速度倍率100\n  提高法宝速度倍率2\n  提高法宝转向速度倍率2\n  提高法宝拖尾长度倍率2[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Jin</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Mu">
+		<DisplayName>甲木参天</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>甲木参天，脱胎要火。春不容金，秋不容土。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高根骨1点\n  提高炼器技能20级\n  提高阵法技能20级\n  提高寿元1000年[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Mu</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Shui">
+		<DisplayName>壬水通河</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_shentong</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>壬水通河，能泄金气，刚中之德，周流不滞。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高魅力1点\n  提高处世技能20级\n  提高雅艺技能20级\n  提高灵气最大值500000点\n  提高灵气最大值倍率50[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Shui</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Huo">
+		<DisplayName>丙火猛烈</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>丙火猛烈，欺霜侮雪。能煅庚金，逢辛反怯。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高悟性1点\n  提高术法技能20级\n  提高炼丹技能20级\n  提高法术威力倍率150\n  降低法术调息间隔0.2点[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Huo</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Tu">
+		<DisplayName>戊土固重</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_huti</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>9</Difficulty>
+		<Desc>戊土固重，既中且正。静翕动辟，万物司命。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得加成：\n  提高机缘1点\n  提高护体技能20级\n  提高灵气护盾效果8点\n  提高食物消耗速度倍率3\n  提高饮气效率倍率3\n  提高精元获得率倍率2[/color][/size]</EffectDesc>
+		<Modifier>Gong_SanQing_Esoterica_Tu</Modifier>	
+	</Esoterica>
+</List></Esotericas>

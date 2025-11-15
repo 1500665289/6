@@ -1,0 +1,97 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Gong_SanQing_Esoterica_JuBao">
+		<DisplayName>聚宝功</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_tianyan01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>三清秘传神通仙界，从混沌中获取天材地宝。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Jin</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：聚宝功[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQJuBao</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_XiLian">
+		<DisplayName>天劫淬</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>三清秘传本身就代表着天道，可以直接向法宝灌注天劫之力。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：天劫淬[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQXiLian</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_XianKui">
+		<DisplayName>仙馈契</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_sheshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>三清秘传以天道的名义赐予低阶修行者修为。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Shui</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：仙馈契[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQXianKui</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_Reborn">
+		<DisplayName>苏生</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_yinshen01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>三清秘传的逆转轮回之力可以把死马医成活马。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Huo</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：苏生[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQReborn</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_YouCui">
+		<DisplayName>通幽圣手</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res\Sprs\ui\icon_xixing01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>15</Difficulty>
+		<Desc>三清秘传感应九幽，无需消耗幽珀就能将物品炼作圣物。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Tu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：通幽圣手[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQYouCui</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong_SanQing_Esoterica_BianHuan">
+		<DisplayName>遮天变</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_tihu01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>三清秘传受天道的宠爱，可以在逍遥模式和降临模式之间变换自如。</Desc>
+		<GLevel>God2</GLevel>
+		<Element>Chaos</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：遮天变[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Magic_SQBianHuan</li>
+		</Magics>
+	</Esoterica>
+</List></Esotericas>

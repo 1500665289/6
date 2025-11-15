@@ -1,0 +1,421 @@
+<ModifierDefs><List>
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_011" Type="Normal">
+		<DisplayName>风水之瞳</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_012" Type="Normal">
+		<DisplayName>洞真之瞳</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_SEE_UNKNOW_AUCTION</li>
+		</SpecialFlags>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_021" Type="Normal">
+		<DisplayName>傀儡术</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_022" Type="Normal">
+		<DisplayName>通心术</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_031" Type="Normal">
+		<DisplayName>百花之礼</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_032" Type="Normal">
+		<DisplayName>百花之祝</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_034" Type="Normal">
+		<DisplayName>风云变幻</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_035" Type="Normal">
+		<DisplayName>无妄天灾</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_036" Type="Normal">
+		<DisplayName>江山易改</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_037" Type="Normal">
+		<DisplayName>造化山河</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_038" Type="Normal">
+		<DisplayName>时空界断</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_041" Type="Normal">
+		<DisplayName>心灵交感</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_042" Type="Normal">
+		<DisplayName>万物有灵</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_043" Type="Normal">
+		<DisplayName>泽惠生民</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_044" Type="Normal">
+		<DisplayName>炼体术</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Magic_Esoterica_045" Type="Normal">
+		<DisplayName>元灵补天</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Esoterica_01" Type="Normal">
+		<DisplayName>道法自然</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="100000"/>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+			<li Name="LingAbsorbSpeed" AddP="1000"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_02" Type="Normal">
+		<DisplayName>神行飞剑</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="1"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="1"/> 
+			<li Name="WorldMapFlySpeedAddP" AddV="10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_03" Type="Normal">
+		<DisplayName>五行纵横</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Fight" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="100"/>
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.75"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddP="-0.75"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="4"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_04" Type="Normal">
+		<DisplayName>仙道贵生</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="500"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="5"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="5"/>
+			<li Name="NutritionConsumeConstant" AddP="1"/>
+			<li Name="NutritionWaterAutoRecover" AddV="1"/>
+			<li Name="NutritionToJingYuanK" AddV="0.025"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_05" Type="Normal">
+		<DisplayName>方寸乾坤</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_06" Type="Normal">
+		<DisplayName>否极泰来</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-50"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_07" Type="Normal">
+		<DisplayName>形神俱妙</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>2,2,2,2,2</BaseFive>
+		<Skills>
+			<li Name="Fight" LevelOver="5"/>
+			<li Name="Qi" LevelOver="5"/>
+			<li Name="Fabao" LevelOver="5"/>
+			<li Name="FightSkill" LevelOver="5"/>
+			<li Name="Barrier" LevelOver="5"/>
+			<li Name="Medicine" LevelOver="5"/>
+			<li Name="Manual" LevelOver="5"/>
+			<li Name="Zhen" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="5"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Perception" Type="Normal">
+		<DisplayName>通天神识</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<NoFog>1</NoFog>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="2000"/>
+			<li Name="FatigueConsumeConstant" AddV="-10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_FabaoMake" Type="Normal">
+		<DisplayName>灵宝真经</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="50"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/>
+			<li Name="FabaoMake_QualityAddV" AddV="1"/>
+			<li Name="FabaoMake_TwelveRateChance" AddP="100"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Oblivious" Type="Normal">
+		<DisplayName>忘情不昧</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="PainTolerance" AddV="10"/>
+			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="HappyConsumeConstant" AddV="-10"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_DanMake" Type="Normal">
+		<DisplayName>金丹大要</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="DanMake_YieldAddP" AddV="10"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="10"/>
+			<li Name="DanMake_SpeedAddV" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Immortal" Type="Normal">
+		<DisplayName>不灭金身</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="500"/>
+			<li Name="ToleranceTMin" AddV="-200"/>
+			<li Name="ToleranceTMax" AddV="1000"/>
+			<li Name="RecoveryPower" AddP="2"/>
+			<li Name="WaterConsumeConstant" AddV="-10"/>
+			<li Name="NutritionConsumeConstant" AddP="2"/>
+			<li Name="NutritionWaterAutoRecover" AddV="2"/>
+			<li Name="NutritionToJingYuanK" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Jin" Type="Normal">
+		<DisplayName>庚金带煞</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,0,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Fabao" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="100"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="2"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Mu" Type="Normal">
+		<DisplayName>甲木参天</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Manual" Level="20"/>
+			<li Name="Zhen" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="1000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Shui" Type="Normal">
+		<DisplayName>壬水通河</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Skills>
+			<li Name="SocialContact" Level="20"/>
+			<li Name="Art" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="500000"/>
+			<li Name="NpcLingMaxValue" AddP="50"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Huo" Type="Normal">
+		<DisplayName>丙火猛烈</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive>
+		<Skills>
+			<li Name="FightSkill" Level="20"/>
+			<li Name="Medicine" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="150"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddV="-0.2"/> 
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Gong_SanQing_Esoterica_Tu" Type="Normal">
+		<DisplayName>戊土固重</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,1</BaseFive>
+		<Skills>
+			<li Name="Barrier" Level="20"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="8"/>
+			<li Name="NutritionConsumeConstant" AddP="3"/>
+			<li Name="NutritionWaterAutoRecover" AddV="3"/>
+			<li Name="NutritionToJingYuanK" AddP="2"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

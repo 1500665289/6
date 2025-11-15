@@ -1,0 +1,231 @@
+﻿<FightSkills><List>
+	<Skill Name="Gong_SanQing_DamageSkill">
+		<DisplayName>真气爆破</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>1</CD>
+		<LingCost>100</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>200</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>61</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_FabaoSkill">
+		<DisplayName>魔剑斩妖</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Fabao</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>500</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng8</CastAni>
+		<Value>10</Value>
+		<Value2>45</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>54</HitEffect>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_ZhenSkill">
+		<DisplayName>六合破阵</DisplayName>
+		<HeadMsg>请选择一个敌方阵眼</HeadMsg>
+		<Tip>对敌方阵法造成大量稳定度伤害</Tip>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Script</Kind>
+		<ClassName>zhen_reducestability</ClassName>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>600</LingCost>
+		<SingAni>LJjineng10</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>20</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Icon>res/Sprs/ui/icon_zhenfa01</Icon>
+		<Shape>Single</Shape>
+		<SelectType>Zhen</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_HealthSkill"><!--恢复技能基础模板 --> 
+		<DisplayName>慈航普度</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>400</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>3000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_SkillSkill"><!--术法增强基础模板 --> 
+		<DisplayName>焚神祝福</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Skill</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>500</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng9</CastAni>
+		<Value>10</Value>
+		<Value2>45</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>71</HitEffect>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_SheildSkill"><!--护体真强基础模板 --> 
+		<DisplayName>太虚护佑</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Sheild</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>400</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng10</CastAni>
+		<Value>5</Value>
+		<Value2>45</Value2>
+		<TargetCamp>Friendly</TargetCamp>
+		
+		<Shape>Single</Shape>
+		<SelectType>AllNpc</SelectType>
+		<HitEffect>63</HitEffect>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_Confuse"><!--狐狸 --> 		
+		<DisplayName>睡眠</DisplayName>
+		<Kind>Script</Kind>
+		<Desc>催眠一名敌人使其不会攻击或移动，但是被攻击就会苏醒。</Desc>
+		<Icon>res\Sprs\ui\icon_zhandoufashu</Icon>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>30</CD>
+		<LingCost>300</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Single</Shape>
+		<ClassName>lingshou_confuse</ClassName>
+		
+		<Value>90</Value>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_Fanshi"><!--龙 --> 
+		<DisplayName>封印</DisplayName>
+		<Kind>Script</Kind>
+		<IsTemplate>0</IsTemplate>
+		<Desc>使一名敌方受到与其法宝最大灵气有关的伤害，并且一段时间内无法使用法宝。</Desc>
+		<Icon>res\Sprs\ui\icon_jichu</Icon>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>30</CD>
+		<LingCost>300</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Value>100</Value>
+		<ClassName>lingshou_fanshi</ClassName>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>400002</MissileEffect>
+		<HitEffect>400003</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_Rongduan"><!--凤凰 --> 
+		<DisplayName>沉默</DisplayName>
+		<Desc>对一名敌人造成可分摊的伤害，并使其一段时间内无法使用术法。</Desc>
+		<Icon>res\Sprs\ui\icon_lianqi</Icon>
+		<Kind>Script</Kind>
+		<IsTemplate>0</IsTemplate>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.3</SingTime>
+		<CD>30</CD>
+		<LingCost>300</LingCost>
+		<SingAni>Atk2</SingAni>
+		<CastAni>Atk2</CastAni>
+		<SelectType>SelectThing</SelectType>
+		<TargetCamp>Enemy</TargetCamp>
+		<Value>1</Value>
+		<ClassName>lingshou_rongduan</ClassName>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>400000</MissileEffect>
+		<HitEffect>400001</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="Gong_SanQing_DamageSkill2">
+		<DisplayName>鸿蒙神光</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>Chaos</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>30</CD>
+		<LingCost>1000</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>2000</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>61</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+</List></FightSkills>

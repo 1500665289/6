@@ -1,0 +1,43 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="Building_Compass" Parent="ProductionBase">
+	<TexPath>Spr\Building\compass.png</TexPath>
+	<TexScale>1</TexScale>
+	<SelectAble>1</SelectAble>
+	<BlockLight>1</BlockLight>
+	<CastShadow>1</CastShadow>
+	<ThingName>太一司南</ThingName>
+	<Desc>这个物件用于解决一些较旧的存档因无法解锁太一遗迹，从而无法获得三清秘传功法的问题，如果您的存档不存在该问题，请无视此物件。</Desc>
+	<Beauty>4</Beauty>
+	<Rate>3</Rate>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.8</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.2</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<NoFengshui>1</NoFengshui>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<MaxCount>1</MaxCount>
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade>	
+	</Building>
+	<StoryBnts>
+		<li Name="使用" Desc="使用太一司南" Appoint="3" Story="Compass" Cost="5"/>
+	</StoryBnts>
+	</ThingDef>	
+</List></ThingDefs>
